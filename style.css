@@ -1,0 +1,119 @@
+
+body{
+    background:black;
+    margin: 0;
+    padding:0;
+    font-size: 22px;
+     
+   
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5px;
+}
+
+.gallery-item{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.gallery-item .images{
+    width: 100%;
+    height:100%;
+    overflow-clip-margin: content-box;
+    overflow:clip ;
+}
+#p1:hover{
+    opacity:0.6;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-tansition:opacity 0.5s ease-in-out;
+    -o-transition: opacity0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+    border-radius:20% ;
+    transition: 0.5s;
+}
+
+ h1{
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 4px;
+    color:#0e3742;
+    text-transform: uppercase;
+    width:100%;
+    line-height: 1.8em;
+    display: inline;
+    outline: #2424cd;
+    animation: animate 3s linear infinite;
+ }
+@keyframes animate {
+    0% ,18%,20% ,60%
+    {
+        color: #0e3742;
+        box-shadow: none;
+    }
+    100%
+    {
+        color:white;
+        box-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4
+    }   
+}
+h3{
+    font-style: italic;
+    /* text-decoration-line: underline; */
+    margin: 1px;
+    color:yellow;
+    font-size: 4vm;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+   
+    
+}
+h3:hover
+{
+    transition: 0.5s;
+    color:white;
+    text-decoration: underline;
+}
+
+ span{
+    font-style:italic;
+    color:white;
+    animation:color-change 7s infinite;
+ }
+ @keyframes color-change{
+    0% {color:bisque}
+    50% {color:aqua}
+    75%{color:aliceblue}
+    100%{ color:violet}
+
+ }
+
+ @media screen and (max-width:310px){
+ }
+    @media screen and (max-width:480px){
+        .container{
+        grid-template-columns: repeat(2,1fr);
+        }
+        
+    }
+    @media screen and (max-width:310px){
+        .container{
+            grid-template-columns:repeat(1,1fr) ;
+        }
+    }
+        
+    
+
+
+   
+
+
