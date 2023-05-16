@@ -10,7 +10,7 @@ body{
 .container{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap:5px;
+    grid-gap:120px;
 }
 
 .gallery-item{
@@ -87,6 +87,7 @@ h3:hover
     font-style:italic;
     color:white;
     animation:color-change 7s infinite;
+    
  }
  @keyframes color-change{
     0% {color:bisque}
@@ -95,6 +96,14 @@ h3:hover
     100%{ color:violet}
 
  }
+ @media screen and (max-width:1300px){
+     
+    span{
+        padding: auto;
+    }
+ }
+
+
  @media screen and (max-width:810px){
     .container{
         grid-template-columns:repeat(3,1fr) ;
